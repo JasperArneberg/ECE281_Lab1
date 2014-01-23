@@ -41,7 +41,7 @@ end Lab1_Module;
 architecture Behavioral of Lab1_Module is
 		--put signals here (connections between gates)
 	signal A_NOT: STD_LOGIC;
-	signal B_AND_C: STD_LOGIC;
+	signal B_OR_C: STD_LOGIC;
 	signal B_NOT_C_NOT: STD_LOGIC;
 	signal D: STD_LOGIC;
 	signal E: STD_LOGIC;
@@ -49,11 +49,11 @@ architecture Behavioral of Lab1_Module is
 begin
 	--put VHDL code here
 	A_NOT <= not A;
-	B_AND_C <= B and C;
-	B_NOT_C_NOT <= not B_AND_C;
-	D <= A_NOT and B_AND_C;
+	B_OR_C <= B or C;
+	B_NOT_C_NOT <= not B_OR_C;
+	D <= A_NOT and B_OR_C;
 	E <= A and B_NOT_C_NOT;
-	X <= D and E;
+	X <= D or E;
 	Y <= B xor C;
 	Z <= C;
 	
