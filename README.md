@@ -46,5 +46,18 @@ The truth table derived from the waveform output is shown above. The values corr
 
 The first time this digital logic circuit was simulated, there were a couple different errors (two seperate usages of AND instead of OR) which led to an incorrect waveform. The errors were fixed, and the expected result was obtained.
 
+# FPGA Results
+| A | B | C | X | Y | Z |
+| :--: | :--: | :--: | :--: | :--: | :--: |
+| 0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 1 | 1 |
+| 0 | 1 | 0 | 1 | 1 | 0 |
+| 0 | 1 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 0 | 1 | 0 | 0 |
+| 1 | 0 | 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 0 | 0 | 1 |
+
+FPGA results match the simulated and expected results.
 
 Documentation: None.
