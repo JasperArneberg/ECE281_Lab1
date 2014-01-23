@@ -23,6 +23,9 @@ ECE281_Lab1
 
 111 --> 001
 
+# Schematic
+![alt text](https://github.com/JasperArneberg/ECE281_Lab1/blob/master/schematic2.jpg?raw=true "Schematic")
+
 # Waveform Output
 ![alt text](https://github.com/JasperArneberg/ECE281_Lab1/blob/master/waveform2.png?raw=true "Screenshot")
 
