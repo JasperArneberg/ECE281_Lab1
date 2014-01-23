@@ -1,0 +1,12 @@
+# Jasper T. Arneberg
+# ECE 281
+
+# Input switches
+NET "A" LOC = "K18"; 
+NET "B" LOC = "H18";
+NET "C" LOC = "G18";
+
+# LED ouputs
+NET "X" LOC = "K15";
+NET "Y" LOC = "J15";
+NET "Z" LOC = "J14";  
