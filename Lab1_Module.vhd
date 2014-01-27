@@ -14,7 +14,7 @@
 --
 -- Revision: 
 -- Revision 0.01 - File Created
--- Additional Comments: 
+-- Documentation: Correct library from Hamsa El-Saawy
 --
 ----------------------------------------------------------------------------------
 library IEEE;
@@ -22,40 +22,50 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
+--entity Lab1_Module is
+--    Port ( A : in  STD_LOGIC;
+--           B : in  STD_LOGIC;
+--           C : in  STD_LOGIC;
+--           X : out  STD_LOGIC;
+--           Y : out  STD_LOGIC;
+--           Z : out  STD_LOGIC);
+--end Lab1_Module;
+--
+--architecture Behavioral of Lab1_Module is
+--		--put signals here (connections between gates)
+--	signal A_NOT: STD_LOGIC;
+--	signal B_OR_C: STD_LOGIC;
+--	signal B_NOT_C_NOT: STD_LOGIC;
+--	signal D: STD_LOGIC;
+--	signal E: STD_LOGIC;
+--	
+--begin
+--	--put VHDL code here
+--	A_NOT <= not A;
+--	B_OR_C <= B or C;
+--	B_NOT_C_NOT <= not B_OR_C;
+--	D <= A_NOT and B_OR_C;
+--	E <= A and B_NOT_C_NOT;
+--	X <= D or E;
+--	Y <= B xor C;
+--	Z <= C;
+--	
+--end Behavioral;
+
 entity Lab1_Module is
-    Port ( A : in  STD_LOGIC;
-           B : in  STD_LOGIC;
-           C : in  STD_LOGIC;
-           X : out  STD_LOGIC;
-           Y : out  STD_LOGIC;
-           Z : out  STD_LOGIC);
+    Port ( A : in  STD_LOGIC_VECTOR (7 downto 0);
+           D : out  STD_LOGIC_VECTOR (7 downto 0));
 end Lab1_Module;
 
 architecture Behavioral of Lab1_Module is
-		--put signals here (connections between gates)
-	signal A_NOT: STD_LOGIC;
-	signal B_OR_C: STD_LOGIC;
-	signal B_NOT_C_NOT: STD_LOGIC;
-	signal D: STD_LOGIC;
-	signal E: STD_LOGIC;
 	
 begin
-	--put VHDL code here
-	A_NOT <= not A;
-	B_OR_C <= B or C;
-	B_NOT_C_NOT <= not B_OR_C;
-	D <= A_NOT and B_OR_C;
-	E <= A and B_NOT_C_NOT;
-	X <= D or E;
-	Y <= B xor C;
-	Z <= C;
-	
+	D <= STD_LOGIC_VECTOR(UNSIGNED(not A) + 1);
 end Behavioral;
-

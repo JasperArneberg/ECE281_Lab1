@@ -1,12 +1,34 @@
 # Jasper T. Arneberg
 # ECE 281
 
-# Input switches
-NET "A" LOC = "K18"; 
-NET "B" LOC = "H18";
-NET "C" LOC = "G18";
+## 3-bit implementation
+## Input switches
+#NET "A" LOC = "K18"; 
+#NET "B" LOC = "H18";
+#NET "C" LOC = "G18";
+#
+## LED ouputs
+#NET "X" LOC = "K15";
+#NET "Y" LOC = "J15";
+#NET "Z" LOC = "J14";  
 
-# LED ouputs
-NET "X" LOC = "K15";
-NET "Y" LOC = "J15";
-NET "Z" LOC = "J14";  
+# 8-bit implementation
+# Input Switches
+NET "A(7)" LOC = "R17";
+NET "A(6)" LOC = "N17";
+NET "A(5)" LOC = "L13";
+NET "A(4)" LOC = "L14";
+NET "A(3)" LOC = "K17";
+NET "A(2)" LOC = "K18";
+NET "A(1)" LOC = "H18";
+NET "A(0)" LOC = "G18";
+
+# LED ouptuts
+NET "D(7)" LOC = "R4";
+NET "D(6)" LOC = "F4";
+NET "D(5)" LOC = "P15";
+NET "D(4)" LOC = "E17";
+NET "D(3)" LOC = "K14";
+NET "D(2)" LOC = "K15";
+NET "D(1)" LOC = "J15";
+NET "D(0)" LOC = "J14";
