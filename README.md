@@ -16,6 +16,18 @@ ECE281_Lab1
 110 --> 010  
 111 --> 001  
 
+# Truth Table
+| A | B | C | X | Y | Z |
+| :--: | :--: | :--: | :--: | :--: | :--: |
+| 0 | 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 1 | 1 |
+| 0 | 1 | 0 | 1 | 1 | 0 |
+| 0 | 1 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 0 | 1 | 0 | 0 |
+| 1 | 0 | 1 | 0 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 0 | 0 | 1 |
+
 # Minimum Sum-of-Products Equation
 The minimum SOP equation was found by creating a K-map for each of the three outputs X, Y, and Z corresponding to the three output digits with X as the MSB. A, B, and C represent the three input digits with A as the MSB.
 
@@ -24,12 +36,13 @@ Y = B'C + BC'
 Z = C  
 
 # Schematic
+Here is the initial schematic. Because it was verified successfully, it is also the final schematic.
 ![alt text](https://github.com/JasperArneberg/ECE281_Lab1/blob/master/schematic2.jpg?raw=true "Schematic")
 
 # Waveform Output
-![alt text](https://github.com/JasperArneberg/ECE281_Lab1/blob/master/waveform2.png?raw=true "Screenshot")
+![alt text](https://github.com/JasperArneberg/ECE281_Lab1/blob/master/waveform2.png?raw=true "ISim Screenshot")
 
-# Simulated Truth Table
+# Simulattion Results
 | A | B | C | X | Y | Z |
 | :--: | :--: | :--: | :--: | :--: | :--: |
 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -42,11 +55,17 @@ Z = C
 | 1 | 1 | 1 | 0 | 0 | 1 |
 
 # Initial Analysis
-The truth table derived from the waveform output is shown above. The values correspond correctly with the Two's Complement values.
+The truth table derived from the waveform output is shown above. The values correspond correctly with the Two's Complement values. Thus, the design is verfied correct.
 
+# Debugging
 The first time this digital logic circuit was simulated, there were a couple different errors (two seperate usages of AND instead of OR) which led to an incorrect waveform. The errors were fixed, and the expected result was obtained.
 
-# FPGA Results
+I also had several errors with my VHDL syntax. C3C Her and C3C El-Saawy helped me find my mistakes.
+
+# Testing
+
+FPGA results match the simulated and expected results. The results are shown below:
+
 | A | B | C | X | Y | Z |
 | :--: | :--: | :--: | :--: | :--: | :--: |
 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -58,7 +77,7 @@ The first time this digital logic circuit was simulated, there were a couple dif
 | 1 | 1 | 0 | 0 | 1 | 0 |
 | 1 | 1 | 1 | 0 | 0 | 1 |
 
-FPGA results match the simulated and expected results.
+These results verify that the FPGA implementation was correct.
 
 # Demos
 Notebook checked off by Dr. Neebel on 23 Jan 14.  
