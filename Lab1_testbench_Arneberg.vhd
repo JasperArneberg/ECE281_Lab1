@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
--- Company: 
--- Engineer:
+-- Company: USAFA
+-- Engineer: C3C Jasper Arneberg
 --
 -- Create Date:   22:16:39 01/22/2014
 -- Design Name:   
@@ -8,7 +8,8 @@
 -- Project Name:  Lab1_Arneberg
 -- Target Device:  
 -- Tool versions:  
--- Description:   
+-- Description: This testbench allows for simulation of the 3-bit two's complement
+-- converter. All 8 cases are simulated.
 -- 
 -- VHDL Test Bench Created by ISE for module: Lab1_Module
 -- 
