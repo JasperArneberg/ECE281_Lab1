@@ -42,7 +42,7 @@ Here is the initial schematic. Because it was verified successfully, it is also 
 # Waveform Output
 ![alt text](https://github.com/JasperArneberg/ECE281_Lab1/blob/master/waveform2.png?raw=true "ISim Screenshot")
 
-# Simulattion Results
+# Simulation Results
 | A | B | C | X | Y | Z |
 | :--: | :--: | :--: | :--: | :--: | :--: |
 | 0 | 0 | 0 | 0 | 0 | 0 |
